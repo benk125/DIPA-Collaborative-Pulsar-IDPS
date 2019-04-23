@@ -119,7 +119,7 @@
         name: "bookkeeper"
     - name: Geo-Replication
       shell: |
-        bin/pulsar-admin namespaces set-clusters public/1 \
+        bin/pulsar-admin namespaces set-clusters public/standalone/1 \
           --cluster {{ cluster_name }} \
           --zookeeper localhost:2181 \
           --configuration-store localhost:2181 \
@@ -129,32 +129,23 @@
       shell: |
         bin/pulsar-admin tenants create Domain1 \
 	  --admin-roles admin
-          --allowed-cluster 1 ,2 ,3 \
-          --zookeeper localhost:2181 \
-          --configuration-store localhost:2181 \
-          --web-service-url {{ http_url }} \
-          --broker-service-url {{ service_url }}
+          --allowed-cluster 1 ,2 ,3 
     - name: NameSpace Retention
       shell: |
-        bin/pulsar-admin namespaces set-retention public/1 \
+        bin/pulsar-admin namespaces set-retention public/standalone/1 \
           --size 10G
     - name: MSG TTL
       shell: |
-        bin/pulsar-admin namespaces set-message-ttl public/1 \
+        bin/pulsar-admin namespaces set-message-ttl public/standalone/1 \
           --messageTTL 200
     - name: Backlog
       shell: |
-        bin/pulsar-admin namespaces set-backlog-quota public/1 \
+        bin/pulsar-admin namespaces set-backlog-quota public/standalone/1 \
           --policy producer_request_hold
     - name: Compaction
       shell: |
-        bin/pulsar-admin namespaces set-compaction-threshold public/1 \
+        bin/pulsar-admin namespaces set-compaction-threshold public/standalone/1 \
           --threshold 1G
-
-
-
-
-
 - name: Set up brokers
   hosts: broker
   connection: ssh
