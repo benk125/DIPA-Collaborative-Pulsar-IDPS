@@ -28,12 +28,31 @@ iptables -A FOWARD -i eth2 -o eth1 -J DROP
 ```
 
 
-
 ### Ryu Installation
-Install the RYu controller onto the testBeds
+Install the Ryu controller onto the testBeds
+
+```
+pip install ryu
+```
+This contains example files such as simpleSwitch13 which this project was based off. For further examples check knetsolutions.
 
 ### Pulsar Local Deployment
+To deploy pulsar on a local cluster Download the pulsar binary at:
+https://pulsar.apache.org/docs/fr/standalone
 
+To run a Standalone cluster on the VM use :
+
+```
+bin/pulsar standalone 
+```
+
+to access this IP / service url use :
+
+```
+pulsar://<vm-host-only-adpater-ip>:6650
+```
+
+For TLS use port 6651
 
 ### Pulsar AWS Deployment
 in order to deploy on AWS you will need :
@@ -61,7 +80,7 @@ setup your ssh keys if not created already :
 ssh-keygen -t rsa
 ```
 
-#### Terraform : Infrastrcuture as Code
+#### Terraform : Infrastructure as Code
 cd into the pulsar/terraform-ansible directory and execute the following :
 ```
 terraform init
@@ -86,3 +105,45 @@ ansible-playbook \
  --inventory='whcih terraform-inventory' \
  pulsar/deploy-pulsar.yaml
 ```
+
+## System execution 
+To tes the system functionality after full completeion of the above task run thefollowing commands.
+
+### Pulsar level
+Before starting the DIPA client , the pulsar pub sub service will need to be running. If deployed on aws , the service_url is accessible 24/7 and you don't needstart the service
+
+Run the following on local Deployment:
+
+```
+bin/pulsar standalone 
+```
+
+
+
+
+
+### Domain level
+
+####Deployed on cloud
+```bash
+ryu run src/ryu/deployed_controller/DIPA_Controller.py
+```
+or
+```bash
+ryu-manager src/ryu/deployed_controller/DIPA_Controller.py
+```
+
+#### Local deployment
+Notes this deployment type is only experimental and not used for test results
+```bash
+ryu run src/ryu/local_controller/DIPA_Controller.py
+```
+or
+```bash
+ryu-manager src/ryu/local_controller/DIPA_Controller.py
+```
+
+
+This will Run the DIPA CLient to classify and collaboratively alert neighbouring domains
+
+
