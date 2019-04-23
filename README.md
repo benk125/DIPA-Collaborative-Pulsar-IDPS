@@ -29,10 +29,6 @@ iptables -A FOWARD -i eth2 -o eth1 -J DROP
 
 
 
-
-
-
-
 ### Ryu Installation
 Install the RYu controller onto the testBeds
 
@@ -58,7 +54,7 @@ ensure the crednetials match those set on your aws account
 Next Install Ansible :
 ```
 pip install ansible`
-``
+```
 
 setup your ssh keys if not created already :
 ```
