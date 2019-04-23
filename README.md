@@ -123,8 +123,9 @@ bin/pulsar standalone
 
 
 ### Domain level
+To run the DIPA client on each the setup VMS use the follwing dependent on your enviroment.
 
-####Deployed on cloud
+#### Deployed on cloud
 ```bash
 ryu run src/ryu/deployed_controller/DIPA_Controller.py
 ```
@@ -146,4 +147,10 @@ ryu-manager src/ryu/local_controller/DIPA_Controller.py
 
 This will Run the DIPA CLient to classify and collaboratively alert neighbouring domains
 
+## Authors
+Ben Kelly - Edge based Network attack protection using Apache Pulsar
 
+## Acknowledgements
+Apache Pulsar / Streamlio for deployment help on aws
+tyagian - https://github.com/tyagian/SDN-DDOS-BOTNET-DETECTION-MITIGATION (For attack simulation files)
+mishra14- https://github.com/mishra14/DDoSAttackMitigationSystem (For ingress policy rate help)
