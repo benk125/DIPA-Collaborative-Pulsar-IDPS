@@ -1,0 +1,26 @@
+#Minute of Project Supervision Meeting
+
+#Student Name        :   Ben Kelly
+#Project Module Code :   ELE 4001
+#Project Supervisor  :   Dr Sandra Scottt-Hayward
+#Meeting Number      :       1
+
+#Progress Since Last Meeting, and Decisions arrived at during meeting:
+•	Explored different types of publish subscribe models i.e Oracle9i learning most of these models use MQTT or AMQP in IOT devices. These protocols are very commonly utilized thus having providing rounded security. 
+•	Apache Pulsar uses a custom binary protocol with integrated TLS and SASL. Unlike websocket protocols binary payloads allow for smaller packet size for easier comms in IOT devices that are power and resource constricted llowing room for crypto signatures, hashes or checksum for packet security from pub sub to SDN.
+•	Learned new terms regarding publish subscribe models e.g loose coupling ( nodes depend on each other to the least extent practicable ) this would keep this anonymity between the SDN on separate subnets.
+•	Server push in pub subs unlike polling in websocket lowers latency but enables devices to receive inbound connection requests which can be abused.
+•	Apache pulsar should only send / receive event messages holding attacker datas location information and nt store messages that cross relate  info on SDN. ?
+•	Are SDNS assumed to be on an isolated Network or have connection to internet. ?
+•	Regarding the modelling topology should there be a mix of LAN isolated networks on one SDN subnet and a Mix of web connected IOT devices on another. How to best strategize the threat model ?.
+
+
+#Action Points
+•	Research the Mirai attack . Understanding the Mirai botnet is provided good inspiration for the concept of developing this project. 
+•	Fix ubuntu dual boot installer .
+•	Research RYU for the controller
+•	Research malicious data detection app that will sit on top of controllers. Pros and cons of each. (DDOS app specifically)
+•	Strategize where should pulsar sit in regards to tpology but physically if network engineers where to set up this topology where does the apache pulsar server run . is it on a dedicated server .
+•	What are the advantages of using pulsar over other pubsubs . how much does it cost , is it subscription base . is it easy to manage and provide enough security. What is it out of the box setup and what additional security features that pulsar have i.e ( certs, encryption, signatures) or additional features ( firewalls , honeypots) will be needed to provide and adequately secure network topology for transmitting data in an evergrowing IOT world , where devices are more prone to attacks and don’t have high levels of security.
+
+#Data Next Meeting    :    18/10/18

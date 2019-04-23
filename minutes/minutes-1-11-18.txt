@@ -1,0 +1,31 @@
+﻿#Minute of Project Supervision Meeting
+
+#Student Name        :   Ben Kelly
+#Project Module Code :   ELE 4001
+#Project Supervisor  :   Dr Sandra Scottt-Hayward
+#Meeting Number      :       4
+
+#Progress Since Last Meeting, and Decisions arrived at during meeting:
+•	Set priority list of what should be done first and make a start on some practical aspects
+•	Setup Mininet vm
+•	Setup Ryu on a separate VM ( this should be changed to run on the same vm as mininet as we are note testing ryu and mininet connection
+•	Looked at miniedit which is a ui toplolgy builder to create toplogy of switches/controllers/hosts to show physical links
+•	Tested creating a mininet network using :
+•	sudo mn --topo single,3 --mac --controller remote --switch ovsk
+
+
+
+
+#Action Points
+•	Look at antispoofing devices that will work with ddos app
+•	Concern : to run multiple VMs might be too taxing performance wise for laptop . Try delegate small amount of storage and see if 16GB RAM will be enough to power 3 VMs at one time.
+•	Sort out communication error to find the rules that ryu will right to the switches
+•	See how Pulsar works and communicates. Devise a simple but effective way to pass malicious information from ryu controller and build topics in pulsar
+•	Use wireshark alongside yru and mininet to check it is picking up malicious traffic.
+•	Search for Malicious network Pcaps.
+•	Manage time and resources better. Set aside minimum 10 hours a week on project .
+
+
+
+
+#Data Next Meeting    :    8/11/18

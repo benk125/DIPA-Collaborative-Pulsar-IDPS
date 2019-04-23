@@ -1,0 +1,24 @@
+﻿#Minute of Project Supervision Meeting
+
+#Student Name        :   Ben Kelly
+#Project Module Code :   ELE 4001
+#Project Supervisor  :   Dr Sandra Scottt-Hayward
+#Meeting Number      :       3
+
+#Progress Since Last Meeting, and Decisions arrived at during meeting:
+•	Set priority list of what should be done first and make a start on some practical aspects
+•	Made rough Gantt chart of timeline which is subject to change whilst programming
+•	Found DDos detection app on Github https://github.com/mishra14/DDoSAttackMitigationSystem
+•	*Module deadlines causing interference for this week*
+•	Need to try more practical aspect . Without it same questioned are being revised and causing more confusion
+
+
+
+#Action Points
+•	Look more into additioan l security thatshould go on top of pulsar to ensure security
+•	Revise Gantt chart to improve time reference points
+•	Make a start on topology setup . First start by installing mininet ryu and getting the SDN passing rules to switches below to read traffic flow
+
+
+
+#Data Next Meeting    :    1/11/18

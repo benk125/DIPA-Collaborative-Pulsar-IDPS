@@ -1,0 +1,22 @@
+﻿#Minute of Project Supervision Meeting
+
+#Student Name        :   Ben Kelly
+#Project Module Code :   ELE 4001
+#Project Supervisor  :   Dr Sandra Scottt-Hayward
+#Meeting Number      :       12
+
+#Progress Since Last Meeting, and Decisions arrived at during meeting:
+•	Begin devloping testing scenarios for the systems
+•	Run iperf on control plane with benign tarffic
+•	Fixed Blocking Threads Issue by introudcing semaphore locks
+•	Measure the control plane time 
+•	Looked at defintion of botnet attack again ; is agorithm sufficient
+
+#Action Points
+•	Start gathering results for set out tests.
+•	Leave openstack neutron implementation for future work 
+•	Look at netmap to increase tcpreplay mbps rate 
+•	Relook at spec to ensure all points are covered
+•	Look at how distributing pulsar will mitigiate exploitations
+
+#Data Next Meeting    :    6/3/19

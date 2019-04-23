@@ -1,0 +1,23 @@
+﻿#Minute of Project Supervision Meeting
+
+#Student Name        :   Ben Kelly
+#Project Module Code :   ELE 4001
+#Project Supervisor  :   Dr Sandra Scottt-Hayward
+#Meeting Number      :       9
+
+#Progress Since Last Meeting, and Decisions arrived at during meeting:
+•	Considered Round Robin shared topic configuration for pulsar cluster
+•	Deduced latency formula to send flow information to neighbouring subnets
+•	Set Interim Report Structure , and agreed on extra content and layout
+•	Reordered Netrsec PCAP files using tcpwrite to change source and destination ips
+•	Literature research to define new strategy and use a DDos app in pulsar cluster also to get a global view of local clusters
+•	Used a Vm Router with Quagga service to isolate subnets and route information to different vms
+
+#Action Points
+•	Interim Literature review have done for 8th January for check before deadline on 11th January
+•	Work on Interim demo for first week in January ~ 14th january
+•	Combine current small implementations together . all components for base solution are there 
+•	Look at global view ddos app for small local cumulative attacks 
+•	Section each Test Cases and clean up Gitlab
+
+#Data Next Meeting    :    18/1/19

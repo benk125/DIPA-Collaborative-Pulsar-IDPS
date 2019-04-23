@@ -1,0 +1,21 @@
+﻿#Minute of Project Supervision Meeting
+
+#Student Name        :   Ben Kelly
+#Project Module Code :   ELE 4001
+#Project Supervisor  :   Dr Sandra Scottt-Hayward
+#Meeting Number      :       13
+
+#Progress Since Last Meeting, and Decisions arrived at during meeting:
+•	Control plane time not changing under different loads - why? 
+•	Increase benign traffic and use flows in table to represent this
+•	Look at communication overhead when netowkr grows and polling rates
+•	Look at complexity of alogithm and how can this be fixed 
+
+#Action Points
+•	reevaluate tests
+•	Is crude detcetion algorithm ok for detection 
+•	Look at complexity of algorithm and how it can be improved 
+•	Looked at bonesi for replicating attacks
+•	Replicate an attack or use botnet file
+
+#Data Next Meeting    :    13/3/19

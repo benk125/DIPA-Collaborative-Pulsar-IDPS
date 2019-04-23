@@ -1,0 +1,33 @@
+﻿#Minute of Project Supervision Meeting
+
+#Student Name        :   Ben Kelly
+#Project Module Code :   ELE 4001
+#Project Supervisor  :   Dr Sandra Scottt-Hayward
+#Meeting Number      :       5
+
+#Progress Since Last Meeting, and Decisions arrived at during meeting:
+•	Signed up to gns3 Practical SDN and openflow fundamentals to understand terminiology
+•	Learend different usage of SDN i.e network automations , control flow , baremetal switching 
+•	Learend layer topology of sdn i.e application lauer , control layer and instrafrsutrcutre layer and omposed diagram of what “app” represents each 
+•	Use openflow for south bound interface and apache pulsar rest api for north bound
+•	Revisted normal switch activity and compared it with SDN
+•	Reactive and proactive flow entreis in switches . Experiment heavily relies on reactive so ryu controller will need to sit on the same host as mininet to reduce latency
+•	Looked at opendaylight but not suitable
+•	Nat and host only adapters don’t work together on vms 
+•	Ryu switch commands 
+
+
+#Action Points
+•	For host oly networks looks at internal network .
+•	Mininet guide to making screen bigger
+•	Look at SDN snort as an original setup i.e snort box which this setup should replace
+•	Don’t look at openstate further as it uses stateful
+•	Change priority rules to block packets 
+•	Group rules by ip ranges to keep flow entry table clean and not cause performance drops
+•	Check how long entries last in tables before deleteing
+
+
+
+
+
+#Data Next Meeting    :    15/11/18

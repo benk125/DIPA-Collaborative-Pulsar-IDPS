@@ -1,0 +1,22 @@
+﻿#Minute of Project Supervision Meeting
+
+#Student Name        :   Ben Kelly
+#Project Module Code :   ELE 4001
+#Project Supervisor  :   Dr Sandra Scottt-Hayward
+#Meeting Number      :       11
+
+#Progress Since Last Meeting, and Decisions arrived at during meeting:
+•	Interim Report Feedback - Critical Analysis
+•	Base line solution without ingress bandwidth filtering
+•	Need to put all config on github and make a how to guide, all files needed to run need to be in github
+•	Stats for a specific port can be gotten by adding in specific flow rules andd not general flows
+•	Need to figure out how to make firewalls in quagga to isolate vms completely
+•	Need to have a thread running all the time to check and consume messages
+
+#Action Points
+•	start evaluationg test cases with proof of success and under different conditions
+•	Make specific flow rules to capture telnet traffic only
+•	look at event and publish time
+•	calculate control plane time by using echo request and replies and take the timestamp for each 
+
+#Data Next Meeting    :    29/1/19

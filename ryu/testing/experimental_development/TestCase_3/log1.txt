@@ -1,0 +1,5 @@
+2019-01-20 17:43:33.205 INFO  ConnectionPool:63 | Created connection for pulsar://192.168.1.1:6650
+2019-01-20 17:43:33.206 ERROR ClientConnection:329 | [<none> -> pulsar://192.168.1.1:6650] Failed to establish connection: Connection refused
+2019-01-20 17:43:33.206 INFO  ClientConnection:1237 | [<none> -> pulsar://192.168.1.1:6650] Connection closed
+2019-01-20 17:43:33.206 ERROR ClientImpl:178 | Error Checking/Getting Partition Metadata while creating producer on persistent://public/default/my-topic -- 5
+2019-01-20 17:43:33.206 INFO  ClientConnection:195 | [<none> -> pulsar://192.168.1.1:6650] Destroyed connection

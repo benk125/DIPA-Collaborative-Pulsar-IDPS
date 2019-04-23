@@ -1,0 +1,39 @@
+﻿#Minute of Project Supervision Meeting
+
+#Student Name        :   Ben Kelly
+#Project Module Code :   ELE 4001
+#Project Supervisor  :   Dr Sandra Scottt-Hayward
+#Meeting Number      :       8
+
+#Progress Since Last Meeting, and Decisions arrived at during meeting:
+•	Set up Apache Pulsar service ./bin/pulsar standalone
+•	Crude consumer , producer setup aross two vm to check connection
+•	Set up a half duplex connecction , consumer reads but isnt able to produce
+•	pulsar and controllers currently on same network
+•	Single controller example that will send request to pulsar when it wants to drop packet
+•	Read pcap example and drop if number of telnet packets reach certain level
+•	How to split over multiple subnets ?
+•	format pcap using tcpick -c -yP -r rcp_dump.pcap
+•	Is it ok to use alot of counters and have a crude threshold for packets reading?
+•	Detailed different attacks that topics can be defined for i.e teardrop , smurf , botnet, tcp replay, syn flood
+•	async comms for callback needed or not ?
+•	Hard to partition and publih to 1, bad practice to publish to yourself, have to send updated just to other subnets
+•	Add authentication to consumers and producers
+•	Do we care about retransmission of messages.
+•	Event time can be published alonside message to see how long it takes to send and process
+•	batching best for latency but its put in a queue so only good for multiple requests
+•	Use shared round robin config for subscription to data
+
+
+#Action Points
+•	Use tcpreplay < pcap file> . Dont read pcap files to process they have to be live.
+•	Download pcap files but use tcprewrite to change source and destination ips / MAC addresses
+•	Interim Literature review have done for 8th January for check before deadline on 11th January
+•	Work on Interim demo for first week in January ~ 14th january
+•	Combine current small implementations together . all components for base solution are there 
+•	Try get them talking to each other on different subnets so they are isolated.
+•	Assume crude threshold limits for i.e telnet traffic over time being too much.
+•	Look into snort and try replicate rule of number of packets per sec 
+
+	 
+#Data Next Meeting    :    13/12/18

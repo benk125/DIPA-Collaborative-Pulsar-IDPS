@@ -1,0 +1,36 @@
+﻿#Minute of Project Supervision Meeting
+
+#Student Name        :   Ben Kelly
+#Project Module Code :   ELE 4001
+#Project Supervisor  :   Dr Sandra Scottt-Hayward
+#Meeting Number      :       6
+
+#Progress Since Last Meeting, and Decisions arrived at during meeting:
+•	Sorted Gitlab 2 issues (CSB admin created new user account)
+•	Moved minutes to .txt files and version controlled documents. Give Sandra reporter Access
+•	Found Ryuretic , which simpiflies header elements to a pkt dictionary
+•	https://github.com/Ryuretic/RyureticLabs/blob/master/ryu/ryu/app/Ryuretic/Ryuretic.py
+•	Looked At ddos mitigation app - Alot are openstate except for this one however it is very statically set
+•	https://github.com/mishra14/DDoSAttackMitigationSystem
+•	Explored using adding new flow rule that would drop the packet (*problems with it setting every packet to 1)
+•	https://www.youtube.com/watch?v=PFShXmWJn1E - good ryu ddos mitigation but no full source code
+•	Should the flow rules be deleted with OFPFC_DELETE
+•	Can curl and change priority and add new flow rules just problems coding
+•	Fixed Mininet small resolution size via compiling guest additions manually
+•	Is Faucet appriopriate to use for this project
+
+
+#Action Points
+•	Pass PCAPs to mininet that are accessible or make my own usign Scapy
+•	use tcpdump / tcpreplay to build pcap files to emulate overflow of tables
+•	Xterm h1 will take you into the host , try this with hping3 which will ping other hosts under ddos conditions
+•	Use iperf when coming to measure throughput ad load testing
+•	Dont delete flow rules , DDos attack with send from different sources so deleting will do nothing
+•	Group range of ips to prevent mirai botnet but also to let legit traffic through
+•	Read Enabling Co-operative IOT security via software defined Networks (SDN)
+•	https://arxiv.org/pdf/1806.01885.pdf
+•	Read a RYU SDN DDOS  research implementation paper to gain better understanding
+•	Produce a flowchart / psuedo Code of each action the SDN should do
+•	Build off DDoSAttackMitigationSystem but make it dynamic and make sure it does the basic SDN talking functions
+	 
+#Data Next Meeting    :    22/11/18

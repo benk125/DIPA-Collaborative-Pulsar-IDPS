@@ -1,0 +1,30 @@
+﻿#Minute of Project Supervision Meeting
+
+#Student Name        :   Ben Kelly
+#Project Module Code :   ELE 4001
+#Project Supervisor  :   Dr Sandra Scottt-Hayward
+#Meeting Number      :       7
+
+#Progress Since Last Meeting, and Decisions arrived at during meeting:
+•	Looked into faucet as an option but realised ryu is better for thid implementation
+•	Looked at differnt ryu ddos mitigators, NOt many and alot hard coded
+•	Found example file of helping to prevent tcp floods and change packet priority which can be used as the base app for ddos detection
+•	Revisted Gantt Chart and with estimated timeline and added major deadlines
+•	Experimented with Xterm to login toeach hosts a, replicating a ddos attack, i.e 1 host curling http server on h2 , h3 will run hping3 with 1million tcp packets which will slow the attack
+•	Used demonstration attack with priority packets ddos detection app to mitigate
+•	Looked into traffic monitor.py which will bild a nice table representation of data
+•	https://github.com/knetsolutions
+•	Use Knet solution for better formatted gui demonstration , ryu inbuilt gui isnt reliable enough, and hard to visually represent topology and attacks clearly
+•	How to block an Attack without just bloxking an p , as mirai is distributed. Does behaviour need to be learned?
+•	Use for multiple flow rule tables in controllers ???
+•	Monitor at intervals for packets per second before writing flow rule
+
+
+#Action Points
+•	Use example attack to represent what will happen if my system is not in place
+•	Draft of interim Report shoud be written by 14th December to allow correction for deadline on 11th January
+•	Assume behaviour types from attacks i.e mirai - suspicioues telnet traffic , or the increase of traffic on ports, Hardcode thresholds to alert attacks to pulsar
+•	Start thinking of Interim Demonstration
+•	Explore Apache pulsar and try get it writing a topic based event when priority rule flow rule set 
+	 
+#Data Next Meeting    :    6/12/18

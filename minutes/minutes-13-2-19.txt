@@ -1,0 +1,24 @@
+﻿#Minute of Project Supervision Meeting
+
+#Student Name        :   Ben Kelly
+#Project Module Code :   ELE 4001
+#Project Supervisor  :   Dr Sandra Scottt-Hayward
+#Meeting Number      :       11
+
+#Progress Since Last Meeting, and Decisions arrived at during meeting:
+•	Added Timing to measure control plane and latency between pulsar and vms
+•	Average, min, max and standard deviation of time from all vms , take max for multiple vms
+•	Threaded Pulsar hub consumer to subscribe to all vms and thread receive updates from them
+•	NTP issues fixed by using PTP to sync the times using a master slave and adding the offset of masters to the slaves
+•	Added global cummulative solution to distinguish an attack from a global level if not triggered from local
+•	Work out standard deviation of global attacks only if multiple subnets are producing results
+
+#Action Points
+•	Start producing test results for critical analysis for wednesday 27th.
+•	critical analysis - openstack neutron and apache pulsar in cloud 
+•	Look at running bengin traffic on each hosts by looping over a pcapusing tcpreplay and using mininet python script 
+•	Test Cases : differnet loads, iperf on control and vm/pulsar link , differnt polling times and tradeoffs.
+•	Make Sure flow rules are blocking Ip addresses and not MAC addresses
+•	Look at how distributing pulsar will mitigiate exploitations
+
+#Data Next Meeting    :    27/2/19

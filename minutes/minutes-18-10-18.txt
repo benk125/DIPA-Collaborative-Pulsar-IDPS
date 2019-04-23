@@ -1,0 +1,30 @@
+#Minute of Project Supervision Meeting
+
+#Student Name        :   Ben Kelly
+#Project Module Code :   ELE 4001
+#Project Supervisor  :   Dr Sandra Scottt-Hayward
+#Meeting Number      :       2
+
+#Progress Since Last Meeting, and Decisions arrived at during meeting:
+•	Look at antispoofing devices that will work with ddos app
+•	Understanding of mirai botnet to date. Distributed DDOS attacks , publically available source code. Infects poorly protected devices using telnet ( factory  setting credentials). Affects multiple bots and spreas. CNC(Control center) sends bots control
+•	Looked at Ryu controller (part of openstack Network ** Don’t look further into openstack unneeded). Ryu is a pip package . Use ryu controller on vm or docker container
+•	Mininet setup process can use multiple vms to create topology however not very scalable
+•	Fuzzy synethic evaluation paper – wireless attacks for DDOS detection
+•	Pulsar Default settings – No encryption , authentication or authorization. 
+•	Network segmentation/Authorization can restrict Access to trusted IP
+•	Pulsar designed to be very public so needs to sit behind secure firewall
+•	What is z-tokens??????? (Public privatekey)
+
+
+#Action Points
+•	Research recent DDOS attacks and how they are managed.
+•	Model multiple attacks on 2 subnets at same time as DDOS attacks are attacking multiple sources at one time. 
+•	Find weaknesses in topology / pulsar which can be exploited
+•	Should pulsar be on a distributed network ???
+•	Make a Gantt Diagram of management. Set high priority tasks and what should be achieved in short for make a basic design for adding additional features and set a timeline.
+•	Look at  a way of tracking back original ip from CNC ( involves understanding botnet steps and doing them in reverse)
+•	Set priority list of what to look up alongside Gantt chart
+
+
+#Data Next Meeting    :    25/10/18

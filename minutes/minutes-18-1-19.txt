@@ -1,0 +1,24 @@
+﻿#Minute of Project Supervision Meeting
+
+#Student Name        :   Ben Kelly
+#Project Module Code :   ELE 4001
+#Project Supervisor  :   Dr Sandra Scottt-Hayward
+#Meeting Number      :       10
+
+#Progress Since Last Meeting, and Decisions arrived at during meeting:
+•	Interim Report writeup for January 14th - Submitted
+•	Mishra DDos App (Ingress Solution) integrated.
+•	Datapaths shouldnt be sent as they wont specifically be sent on the same
+datapath ids. neighouring vmds shouldnt know datapath information as this lets attacker know network toplogy if domain compromised
+•	Should only send attackers network address ; either MAC or both
+•	Consider that arp spoofing and exploiting bandwidth may affect implementation
+•	Looked At C.R.A.V.E.D distributed monitoring that presents results in UI
+
+#Action Points
+•	Create Baseline solution to collaborative protect neighbouring vm using only eth_src
+•	Narrow task scope for the mean time and start evaluating implementation so far and doing test Cases on it
+•	Test latency under different thresholds.i.e can it handle Alot. Does it pick up traffic on a small load and if not look at it from a global level. 
+•	Set levels of attack i.e if huge packet load on resources on one domain and is attacking mutltiple resources set priority rule but small load maybe only try protect itself first before sending. 
+•	Dont block all traffic on that port , only block specific traffic i.e flows on the port 22 to indicate telnet traffic.
+
+#Data Next Meeting    :    22/1/19
