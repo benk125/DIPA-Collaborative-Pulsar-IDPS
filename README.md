@@ -4,6 +4,19 @@ Collaborative intrusion detection and prevention system using apache pulsar ( pu
 ## Getting Started
 This project takes results from a a series of deployed instances , however there are a variety of experimental and developmental test files used for local experimentation. 
 
+## Prerequisites
+please install the requirements.txt fiel on each our your source domains before further installation.
+
+```
+sudo pip install -r requirements.tx
+```
+
+For the pulsar management points ( be this on your local machine or on another VM) , make sure the requirements_pulsar.txt is installed in the local enviroment. NOTE this is required as you may  experience ansible issues regarding shell commands with incompatiable versioning
+
+```
+sudo pip install -r requirements_pulsat.txt
+``` 
+
 ### Virtual Machine Testbeds
 The aim of this project is to protect a series of destination domains upon receviving a malcious information event from a enighbouring source domain. For this a collection of virtual machines were used to emulate isolated Testbeds. 
 
@@ -26,7 +39,7 @@ iptables -A FOWARD -i eth1 -o eth2 -J DROP
 iptables -A FOWARD -i eth2 -o eth0 -J DROP
 iptables -A FOWARD -i eth2 -o eth1 -J DROP
 ```
-
+Useful Quagga link : https://www.brianlinkletter.com/how-to-build-a-network-of-linux-routers-using-quagga
 
 ### Ryu Installation
 Install the Ryu controller onto the testBeds
@@ -149,6 +162,9 @@ This will Run the DIPA CLient to classify and collaboratively alert neighbouring
 
 ## Authors
 Ben Kelly - Edge based Network attack protection using Apache Pulsar
+
+## Contact
+If installing or testing the configuration setup,feel free to contact me with questions or help needed. 
 
 ## Acknowledgements
 Apache Pulsar / Streamlio for deployment help on aws
