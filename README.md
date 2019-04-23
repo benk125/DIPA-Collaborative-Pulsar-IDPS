@@ -4,6 +4,17 @@ Collaborative intrusion detection and prevention system using apache pulsar ( pu
 ## Getting Started
 This project takes results from a a series of deployed instances , however there are a variety of experimental and developmental test files used for local experimentation. 
 
+### Local Deployment
 
+
+### AWS Deployment
+in order to deploy on AWS you will need :
+1) An AWS account
+2) aws-cli system package
+3) python and pip
+4) terraform-inventory tool ( this enables ansible to use terraform artifacts)
+
+Once these are set , run :
+`aws confiure`
 
 
