@@ -496,4 +496,8 @@ class SimpleSwitch13(app_manager.RyuApp):
 	    # traffic between it and the controller if greater than 60% of its normal traffic
             self._suspected_bots = set((k) for k,v in bot_dict.items() if v >= 0.6)
 
+        self.timeReply = time.perf_counter()
+        nowTime = datetime.now()
+        producerTime.send("{}@{}".format(self.timeReply - self.timeRequest, nowTime).encode('utf-8'))
+
             
