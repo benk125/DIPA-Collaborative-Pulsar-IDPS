@@ -4,7 +4,7 @@ asn1crypto==0.24.0
 cffi==1.12.2
 cryptography==2.6.1
 DateTime==4.3
-ecdsa==0.13
+ecdsa==0.13.3
 enum34==1.1.6
 futures==3.2.0
 grpcio==1.16.1
