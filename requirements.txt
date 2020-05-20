@@ -9,7 +9,7 @@ dnspython==1.15.0
 eventlet==0.24.1
 greenlet==0.4.15
 grpcio==1.17.0
-httplib2==0.12.1
+httplib2==0.18.0
 idna==2.7
 igraph==0.1.11
 ipython==7.3.0

@@ -9,7 +9,7 @@ enum34==1.1.6
 futures==3.2.0
 grpcio==1.16.1
 gyp==0.1
-httplib2==0.9.1
+httplib2==0.18.0
 ipaddress==1.0.22
 Jinja2==2.8
 MarkupSafe==0.23
