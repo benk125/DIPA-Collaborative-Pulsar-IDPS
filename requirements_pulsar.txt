@@ -22,7 +22,7 @@ pulsar-client==2.2.0
 pycparser==2.19
 pycrypto==2.6.1
 pytz==2018.9
-PyYAML==3.11
+PyYAML==5.4
 six==1.11.0
 unity-lens-photos==1.0
 zope.interface==4.6.0
