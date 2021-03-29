@@ -33,7 +33,7 @@ prompt-toolkit==2.0.9
 protobuf==3.6.1
 ptyprocess==0.6.0
 pulsar-client==2.2.0
-Pygments==2.3.1
+Pygments==2.7.4
 pytz==2018.7
 PyYAML==3.13
 repoze.lru==0.7
