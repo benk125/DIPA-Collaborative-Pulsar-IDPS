@@ -1,5 +1,5 @@
 adium-theme-ubuntu==0.3.4
-ansible==2.4.1.0
+ansible==4.2.0
 asn1crypto==0.24.0
 cffi==1.12.2
 cryptography==2.6.1
