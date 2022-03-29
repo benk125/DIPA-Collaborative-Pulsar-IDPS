@@ -16,7 +16,7 @@ MarkupSafe==0.23
 netaddr==0.7.18
 netifaces==0.10.9
 numpy==1.16.1
-paramiko==1.16.0
+paramiko==2.10.1
 protobuf==3.6.1
 pulsar-client==2.2.0
 pycparser==2.19
