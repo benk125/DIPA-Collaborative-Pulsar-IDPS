@@ -20,7 +20,7 @@ msgpack==0.6.0
 multidict==4.5.2
 netaddr==0.7.19
 ntplib==0.3.3
-numpy==1.16.2
+numpy==1.22.0
 oslo.config==6.7.0
 oslo.i18n==3.23.0
 ovs==2.10.0
